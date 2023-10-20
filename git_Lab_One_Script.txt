@@ -1,0 +1,47 @@
+git init
+Creates a new repository in the folder we created in step one. 
+Creates a hidden file in the root directory .git which can be brought to view using the view tab and then checking the “Hidden Folders” check box. 
+This creates a master repository on the machine that the user is sitting at.
+
+ 
+
+
+git add
+This command prepares a file to the next commit by sending it to the staging area. This staging area is where all the files that you want to include in your next commit need to be added to. Using the git status command you can check what files have and haven’t been added to the staging area.
+I have added both my text documents and they are now ready to be committed
+ 
+ 
+
+
+
+
+
+git status
+Gives us a readout of what files are in the staging area and are ready to be committed.
+Files shown in Green have successfully been added using the git add command and are in the staging area now ready to be committed. Files shown in Red have not been added to the staging area and won’t be committed with the next commit.
+ 
+git commit
+This command creates a snapshot of the staged files. In other words, a new revision point, a point along the projects timeline where the changes made between commits can easily be viewed. 
+
+ 
+
+
+git branch -M main 
+This command has allowed me to change the name of my master branch to “main”
+The git branch command is use for branch management. It can list the branches I have, create a new branch, delete a branch or rename an existing branch.
+ 
+
+git remote
+This command creates a connection between my local repository that I created with git init and the remote repository created by Pete on GitHub. 
+
+ 
+
+git push 
+The git push command sends content from the local repository that we created with git init to the remote repository which was created on git hub for us by Pete. 
+We can do this because we have established the connection to the remote repository in the last step using the git remote command
+ 
+
+
+git checkout
+This command allows me to see if the branch I am currently working on is up to date with the main branch. This will tell me if there are “dirty files” or files which have been edited and differ from the version of those files stored along the main branch. 
+ 
